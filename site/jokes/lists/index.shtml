@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<style><!--
+A:link {text-decoration: none; text-weight: bold; color: #00ccff}
+A:visited {text-decoration: none; color: #0099cc}
+A:hover {text-decoration: underline; text-weight: bold; color: #9988ff}
+--></style>
+<title>The Miscellaneous Page - Lists</title>
+</head>
+
+
+<body bgcolor="black" text="#9989ff" link="#00ccff" alink="#00ffff" vlink="#0099cc">
+<FONT SIZE="2" FACE="Verdana, Arial" color="#00ccff"><B>Lists</B><BR>
+<FONT size= "1" COLOR="#0099cc">last updated july 25, 2000<BR>
+<P><BR>
+</font></font>
+<center>
+
+<table width="99%" cellpadding="0" cellspacing="1" border="0" bordercolor="black">
+<tr bgcolor="#000066">
+    <td align="center"><font size="2" FACE="Verdana, Arial" color="#FFFFFF"><b>Lists</b></td></tr>
+<tr bgcolor="#222233">
+    <td><FONT SIZE="2" FACE="Verdana, Arial">
+This is the part of the jokes section where weird people like me come out and say
+    weird things that sound profound at first, but are really just nonsense. I love this
+    place!</td>
+  </tr>
+</table>
+
+<table width="99%" cellpadding="0" cellspacing="1" border="0" bordercolor="black">
+  <tr bgcolor="#00066">
+<td width="55%"><FONT SIZE="1" FACE="Verdana, Arial" color="#FFFFFF"><b>Title</b></td>
+<td><FONT SIZE="1" FACE="Verdana, Arial" color="#FFFFFF"><b>Submitted By</b></td>
+</tr>
+<tr bgcolor="#222233">
+<td><FONT SIZE="2" FACE="Verdana, Arial"><a href="hannibal.html">Hannibal Jokes</a></td>
+<td><FONT SIZE="2" FACE="Verdana, Arial">Dixon</td>
+</tr>
+<tr bgcolor="#2221133">
+<td><FONT SIZE="2" FACE="Verdana, Arial"><a href="forwards.html">Seven Basic types of Chain Letters</a>
+<td><FONT SIZE="2" FACE="Verdana, Arial">BlackHawk</td>
+ </tr>
+<tr bgcolor="#222233">
+<td><FONT SIZE="2" FACE="Verdana, Arial"><a href="stupiduse.html">Stupid PC Users</td>
+<td><FONT SIZE="2" FACE="Verdana, Arial">Mailbits.com</td>
+</tr><tr bgcolor="#2221133">
+<td><FONT SIZE="2" FACE="Verdana, Arial"><a href="movies.html">Things I would never know without the movies</a>
+<td><FONT SIZE="2" FACE="Verdana, Arial">A friend</td>
+ </tr>
+<tr bgcolor="#2221133">
+<td><FONT SIZE="2" FACE="Verdana, Arial"><a href="stupidity.html">Is the human race doomed to stupidity?</a>
+<td><FONT SIZE="2" FACE="Verdana, Arial">A friend</td>
+ </tr><tr bgcolor="#222233">
+<td><FONT SIZE="2" FACE="Verdana, Arial"><a href="ponder.html">Points to Ponder</a></td>
+<td><FONT SIZE="2" FACE="Verdana, Arial">ManiacalClown</td>
+</tr>
+</table>
+<center><br><br>
+<FONT SIZE="2" FACE="Verdana, Arial">
+- <a href="javascript:window.close()">Close Window</a> -</center>
+</body>
+</html>
+<!-- End of Content -->
+</body>
+</html>
