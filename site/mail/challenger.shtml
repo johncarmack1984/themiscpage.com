@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<style><!--
+A:link {text-decoration: none; text-weight: bold; color: #00ccff}
+A:visited {text-decoration: none; color: #0099cc}
+A:hover {text-decoration: underline; text-weight: bold; color: #9988ff}
+--></style>
+<title>The Miscellaneous Page - Send Mail to Challenger</title>
+</head>
+
+
+<body bgcolor="black" text="#9989ff" link="#00ccff" alink="#00ffff" vlink="#0099cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<img src="/images/tmp.gif" align="left" width="110" height="50">
+
+<table align="right" valign="top">
+  <tr>
+    <td align="right" valign="top"><font SIZE="1" FACE="Verdana, Arial">miscellaneous - <i>adj.</i><br>
+    a. made up of a variety of parts or ingredients<br>
+    b. having a variety of characteristics, abilities, or appearances<br>
+    <b>c. concerned with diverse subjects or aspects</b>
+    </font></td>
+  </tr>
+</table>
+
+<p><br>
+<br>
+<br>
+<i><font face="Arial" size="1">the miscellaneous page</font></i>
+
+<hr size="2" color="#9989ff" width="100%">
+</td></tr></table>
+<STYLE TYPE="text/css"><!--
+ BODY {
+ scrollbar-arrow-color:#9989ff;
+  scrollbar-track-color:"#221133";
+  scrollbar-shadow-color:#49276F;
+  scrollbar-face-color:#49276F;
+  scrollbar-highlight-color:#49276F;
+  scrollbar-darkshadow-color:#49276F;
+  scrollbar-3dlight-color:#000066;
+ }
+//--></STYLE>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+<td valign="top" width="15%">
+<div align="left">
+<table width="100%" cellspacing="3" border="0" bordercolor="#000000" valign="top" height="313">
+  <tr class="1" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/main.shtml">M a i n</a></b></font></td>
+  </tr>
+  <tr class="2" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/awards/">Awards</a></b></font></td>
+  </tr>
+  <tr class="3" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/downloads/">Downloads</a></b></font></td>
+  </tr>
+  <tr class="4" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/editorials/">Editorials</a></b></font></td>
+  </tr>
+  <tr class="5" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/stories/">FanTales</a></b></font></td>
+  </tr>
+  <tr class="6" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/forums/ubbcgi/ultimatebb.cgi">Forums</a></b></font></td>
+  </tr>
+  <tr class="7" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/jokes/">Jokes</a></b></font></td>
+  </tr>
+  <tr class="8" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/mail/">Letters</a></b></font></td>
+  </tr>
+  <tr class="9" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/misc/">Miscellaneous</a></b></font></td>
+  </tr>
+  <tr class="10" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/music/">Music</a></b></font></td>
+  </tr>
+  <tr class="11" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/pics/">Pics &amp; Art</a></b></font></td>
+  </tr>
+  <tr class="12" bgcolor="#221133">
+    <td><font SIZE="2" FACE="Verdana, Arial"><b><a href="/surveys/">Surveys</a></b></font></td>
+  </tr>
+</table>
+</div>
+</td><td valign="top" align="center" width="24" background="/images/divide.gif">&nbsp;</td>
+<td valign="top">
+<form method="POST" action="mailform.pl">
+  <input type="hidden" name="XX-send-to-email" value=""><input
+  type="hidden" name="XX-redirect-to-url" value="success.html"><input type="hidden"
+  name="REQUIRED" value="XX-name,XX-email,XX-subject,Message"><center><table
+  border="0" cellpadding="0" cellspacing="0" width="90%">
+    <tr>
+      <td bgcolor="#000000"><table border="0" cellpadding="4" cellspacing="1" width="100%">
+        <tr bgcolor="#000066">
+          <td valign="top" colspan="2"><font SIZE="2" FACE="Verdana, Arial" COLOR="#ffffff"><b>Send
+          Email to Challenger</b></font></td>
+        </tr>
+        <tr bgcolor="#221133">
+          <td><font SIZE="2" FACE="Verdana, Arial"><b>Your Name:</b></font></td>
+          <td><input type="text" name="XX-name" size="25" maxlength="25"></td>
+        </tr>
+        <tr bgcolor="#221133">
+          <td><font SIZE="2" FACE="Verdana, Arial"><b>Your E-Mail Address:</b></font></td>
+          <td><input type="text" name="XX-email" size="25" maxlength="25"></font></td>
+        </tr>
+        <tr bgcolor="#221133">
+          <td NOWRAP><font SIZE="2" FACE="Verdana, Arial"><b>Subject:</b></font></td>
+          <td><input type="text" name="XX-subject" size="40" maxlength="85"></td>
+        </tr>
+        <tr bgcolor="#221133">
+          <td valign="top" NOWRAP><font SIZE="2" FACE="Verdana, Arial"><b>Message:</b></font> </td>
+          <td><textarea name="Message" WRAP="physical" COLS="45" ROWS="10"></textarea> </td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+  </center><center><p><input TYPE="SUBMIT" VALUE=" Send Email "> </p>
+  </center>
+</form>
+<p align="center"><font COLOR="#9989ff" size="1" FACE="Verdana, Arial">The Miscellaneous
+Page and The Miscellaneous Boards<br>
+Copyright 2000 John Carmack</p></font>
+</td></tr></table></body>
+</html>
