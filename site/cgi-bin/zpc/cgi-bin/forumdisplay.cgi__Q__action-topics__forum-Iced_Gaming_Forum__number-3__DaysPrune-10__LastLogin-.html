@@ -1,0 +1,575 @@
+<HTML>
+<HEAD><TITLE>ZPC Forums</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- HIDE
+var sessionLogin = escape("");
+var sessionLoginDT = escape("");
+var AddSessionInfo = escape("");
+
+expireDate = new Date;
+if (expireDate.getYear() < 1900) {
+expireDate.setYear(expireDate.getYear() + 1900 + 1);
+} else {
+expireDate.setYear(expireDate.getYear()+1);
+}
+
+if (AddSessionInfo == "true") {
+
+var CookieLogin = escape("");
+var CookieLoginDT = escape("");
+
+if (document.cookie != "") {
+	thisCookie = document.cookie.split(";");
+	expireDate2 = new Date;
+	
+	if (expireDate2.getYear() < 1900) {
+expireDate2.setYear(expireDate.getYear() + 1900);
+} else {
+expireDate2.setYear(expireDate.getYear());
+}
+	expireDate2.setYear(expireDate2.getYear()-1);
+	
+	for (i=0; i<thisCookie.length; i++) {
+	
+		cookieName = thisCookie[i].split("=")[0];
+		if ((cookieName == "lastLogin") || (cookieName == "LastLoginDT") || (cookieName == "sessionLogin") || (cookieName == "sessionLoginDT")) {
+		document.cookie = cookieName + "=;expires=" + expireDate2.toGMTString() + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+		}
+	}
+}
+	  document.cookie = "lastLogin=" + CookieLogin + ";expires=" + expireDate.toGMTString() + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+  document.cookie = "LastLoginDT=" + CookieLoginDT + ";expires=" + expireDate.toGMTString() + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+	  document.cookie = "sessionLogin=" + sessionLogin + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+document.cookie = "sessionLoginDT=" + sessionLoginDT + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+}
+
+// STOP HIDING FROM OTHER BROWSERS -->
+</SCRIPT>
+</head>
+ <BODY bgcolor="#000000"  text="#03CBC9" link="#DAD2D2" alink="#418988" vlink="#ACA1A2" marginheight=0 marginwidth=0 topmargin=0 leftmargin=0 rightmargin=0>
+<FONT SIZE="2" FACE="Verdana, Arial">
+<style><!--
+A:link {text-decoration: none; text-weight: bold;}
+A:visited {text-decoration: none;}
+A:hover {text-decoration: underline; text-weight: bold; color: #418988}
+--></style>
+<center>
+<table border=0 width=95%>
+<tr>
+<td align=left valign=top>
+<A HREF="Ultimate.cgi?action=intro&BypassCookie=true"><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/bbtitle2.jpg" BORDER=0></A>
+<BR>
+<FONT SIZE="2" FACE="Verdana, Arial" color="#DAD2D2"><B>Iced Gaming</B>
+<br><FONT size= "1" COLOR="#ACA1A2">(moderated by Ice, Nebula, ManiacalClown)
+<P><BR>
+</FONT></font>
+</td>
+<td valign=top nowrap><FONT SIZE="1" FACE="Verdana, Arial">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/open.gif"  BORDER=0>&nbsp;&nbsp;<A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/Ultimate.cgi?action=intro&BypassCookie=true"><ACRONYM TITLE="Return to summary page of all forums.">ZPC Forums</ACRONYM></A>
+<BR>
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/tline.gif"  BORDER=0><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/open.gif"  BORDER=0>&nbsp;&nbsp;Iced Gaming
+<P>
+<CENTER>
+<FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/postings.cgi?action=newtopic&number=3&forum=Iced+Gaming&DaysPrune=10&LastLogin="><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/topic2.jpg"  BORDER=0 ALT="Post New Topic"></A></FONT>
+<BR>
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/ubbmisc.cgi?action=editbio&Browser=&DaysPrune=10&LastLogin="><ACRONYM TITLE="Click here to edit your profile.">profile</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/Ultimate.cgi?action=agree"><ACRONYM TITLE="Registration is free!">register</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/ubbmisc.cgi?action=setprefs"><ACRONYM TITLE="Set your preferences.">preferences</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/faq.html" target=_blank><ACRONYM TITLE="Frequently Asked Questions">faq</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/search.cgi?action=intro&default=3"><ACRONYM TITLE="Perform a search by keyword, date, or name.">search</ACRONYM></A>
+<p>
+<FORM ACTION="forumdisplay.cgi" METHOD="GET">
+<INPUT TYPE="HIDDEN" NAME="action" VALUE="topics">
+<INPUT TYPE="HIDDEN" NAME="forum" VALUE="Iced Gaming">
+<INPUT TYPE="HIDDEN" NAME="number" VALUE="3">
+<SELECT NAME="DaysPrune">
+	<OPTION value="1" >Show topics from last day
+	<OPTION value="2" >Show topics from last 2 days
+	<OPTION value="5" >Show topics from last 5 days
+	<OPTION value="10" SELECTED>Show topics from last 10 days
+	<OPTION value="20" >Show topics from last 20 days
+	<OPTION value="30" >Show topics from last 30 days
+	<OPTION value="45" >Show topics from last 45 days
+	<OPTION value="60" >Show topics from last 60 days
+	<OPTION value="75" >Show topics from last 75 days
+	<OPTION value="100" >Show topics from last 100 days
+	<OPTION value="365" >Show topics from the last year
+	<OPTION value="1000" >Show all topics
+</SELECT>
+<INPUT TYPE="SUBMIT" NAME="SUBMIT" VALUE="Go">
+</FORM>
+</center>
+</FONT>
+</td></tr></table>
+
+
+<table border=0 width=95%>
+<TR>
+<td><FONT SIZE="1" FACE="Verdana, Arial">
+<B>New Topics:</B> All registered users may post new topics in this forum.<BR><B>Replies:</B> All registered users may post replies in this forum.</font>
+</td>
+</tr>
+</table>
+
+
+<table border=0 cellpadding=4 border=0 cellspacing=1 width=95%>
+<tr bgcolor="#00008f">
+<td>&nbsp;</td>
+<TD>&nbsp;</TD>
+<td>
+<FONT SIZE="1" FACE="Verdana, Arial" color="#FFFFFF"><B>Topic</B></FONT>
+</td>
+<td>
+<FONT SIZE="1" FACE="Verdana, Arial" color="#FFFFFF"><B>Topic Starter</B></FONT>
+</td>
+<td><FONT SIZE="1" FACE="Verdana, Arial" color="#FFFFFF"><B>Replies</B></FONT>
+</td>
+<td NOWRAP><FONT SIZE="1" FACE="Verdana, Arial" color="#FFFFFF"><B>Last Post</B></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon1.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000081.html">please give me a break here</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">SharkMan</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">17</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">23:10</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon10.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000085.html">what are your favorite movies</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">SharkMan</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">5</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">22:42</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon4.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000088.html">Site Submission: Hyrule Sun</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Guardian</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">3</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">19:33</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/hotclosed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon1.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000062.html">Why is the world messed up?</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Jarvis</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">34</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">19:01</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon4.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000087.html">I'm making a new Zelda game!</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Kokiri Kid</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">0</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">18:35</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon12.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000083.html">::Running away from HTLOZ boards</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Agent The Peacekeeper</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">13</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">17:18</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/hotclosed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon10.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000073.html">The New Layout</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Crashtestmommy</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">24</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">15:31</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon1.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000086.html">HTLOZ</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Peter</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">0</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">15:30</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/hotclosed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon1.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000074.html">The many wonders of stuff...</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Jarvis</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">22</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">03-01-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">08:36</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon1.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000082.html">Umm,</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Topaz989</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">2</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-29-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">21:47</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon5.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000084.html">Heh...I'm BACK!</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">The Tempest</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">0</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-29-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">19:56</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon1.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000080.html">htloz is so sick the people there must have been toilet trained at gun point</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">SharkMan</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">8</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-29-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">06:41</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon13.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000079.html">HtLoZ MB is getting really sick</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Topaz989</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">4</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-28-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">11:36</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/hotclosed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon2.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000075.html">Ice, Dixon, MC or Nebula, a few requests.</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Challenger</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">20</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-28-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">07:24</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon6.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000078.html">The 3 New Logos</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Ice</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">4</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-27-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">06:35</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon6.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000077.html">I'm new! </A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">SharkMan</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">14</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-26-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">15:39</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon6.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000064.html">Tornado</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">ManiacalClown</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">17</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-26-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">12:33</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon10.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000076.html">Be afraid, be very afraid</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">BlackHawk</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">8</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-26-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">10:41</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon1.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000066.html">Graal help</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Challenger</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">4</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-26-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">03:41</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon13.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000072.html">Nice layout! Not.</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Guardian</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">16</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-24-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">21:41</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon5.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000067.html">The System Wars</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Brent</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">16</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-23-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">15:23</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon6.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000071.html">A Sweet Deal</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">Topaz989</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">0</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-21-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">14:11</FONT></FONT>
+</td></tr>
+<TR>
+<TD bgcolor="#393939">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif" BORDER=0></td>
+<TD bgcolor="#333333"><ACRONYM TITLE="This is an icon describing the mood of the topic or describing information contained in the topic.  For more info on icons, read our FAQ."><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/icons/icon9.gif" BORDER=0 WIDTH=15 HEIGHT=15  ALIGN=ABSCENTER></ACRONYM></td>
+<TD bgcolor="#393939"><FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/Forum3/HTML/000065.html">Coconut cooking tips</A>
+</FONT>
+</td>
+<td bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">drizzt</FONT>
+</td>
+<td align=center bgcolor="#393939">
+<FONT SIZE="2" FACE="Verdana, Arial">19</FONT>
+</td>
+<td NOWRAP bgcolor="#333333">
+<FONT SIZE="2" FACE="Verdana, Arial">02-21-2000 <FONT SIZE="2" FACE="Verdana, Arial" COLOR="#808080">11:16</FONT></FONT>
+</td></tr>
+</table>
+
+<br>
+<table border=0 width=95%>
+<TR>
+<TD align=right><FONT SIZE="2" FACE="Verdana, Arial"></font>
+</td>
+</tr></table><BR>
+<table border=0 width=95%>
+<tr><td align=left valign=top>
+<FONT SIZE="1" FACE="Verdana, Arial" COLOR="#ACA1A2">All times are CT (US). All dates are in Month-Day-Year format.</FONT></td>
+<td align=right NOWRAP>
+<FONT SIZE="2" FACE="Verdana, Arial">
+<FORM ACTION="forumdisplay.cgi" METHOD="GET">
+<INPUT TYPE="HIDDEN" NAME="action" VALUE="topics">
+<B>Hop to: </B><SELECT NAME="number">
+<OPTION value="">Select a Forum 
+<OPTION value="">
+<OPTION value="">List of Forums:
+<OPTION value="">
+<OPTION value="">
+<OPTION value="">Category: General
+<OPTION VALUE="">--------------------
+<OPTION value="1">General Conversation
+<OPTION value="5">The Mysterious Board
+<OPTION value="">
+<OPTION value="">Category: Zelda
+<OPTION VALUE="">--------------------
+<OPTION value="2">Zelda in General
+<OPTION value="">
+<OPTION value="">Category: Iced Gaming
+<OPTION VALUE="">--------------------
+<OPTION value="3" SELECTED>Iced Gaming
+<OPTION value="">
+<OPTION value="">Category: Utilities
+<OPTION VALUE="">--------------------
+<OPTION value="4">Personal Images
+</SELECT><INPUT TYPE="SUBMIT" NAME="SUBMIT" VALUE="Go"></FORM></FONT></TD></tr></TABLE>
+</center>
+<P>
+<img src="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif"  border=0 alt="No New Posts">&nbsp;&nbsp;An Open Thread (<img src="http://www.themiscpage.com/cgi-bin/zpc/ubb/hotclosed.gif"  border=0 alt="Hot Topic">&nbsp;&nbsp;More than 20 replies).<BR>
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/yellockfolder.gif"  BORDER=0 ALT="Closed Thread Icon">&nbsp;&nbsp;A Closed thread - no new replies accepted.
+<p>
+<CENTER><A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/postings.cgi?action=newtopic&number=3&forum=Iced+Gaming">Post New Topic</A><P>
+<B><FONT SIZE="2" FACE="Verdana, Arial">
+Contact Us | <A HREF="http://zpcentral.zo8.com" target=_top>Zelda-Pokémon Central</A>
+</B></FONT>
+<P>
+<FONT COLOR="#808080" size="1" FACE="Verdana, Arial">"Thank you, Mr. Carmack."
+<P>
+Powered by: 
+Ultimate Bulletin Board (UltimateBB), Version 5.43a<BR>&copy; Infopop Corporation (formerly Madrona Park, Inc.), 1998-2000.
+<br><br>
+</FONT>
+</CENTER></font>
+
+</body></html>
+

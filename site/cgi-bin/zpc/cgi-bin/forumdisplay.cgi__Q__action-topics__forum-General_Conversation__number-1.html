@@ -1,0 +1,181 @@
+<HTML>
+<HEAD><TITLE>ZPC Forums</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- HIDE
+var sessionLogin = escape("");
+var sessionLoginDT = escape("");
+var AddSessionInfo = escape("");
+
+expireDate = new Date;
+if (expireDate.getYear() < 1900) {
+expireDate.setYear(expireDate.getYear() + 1900 + 1);
+} else {
+expireDate.setYear(expireDate.getYear()+1);
+}
+
+if (AddSessionInfo == "true") {
+
+var CookieLogin = escape("");
+var CookieLoginDT = escape("");
+
+if (document.cookie != "") {
+	thisCookie = document.cookie.split(";");
+	expireDate2 = new Date;
+	
+	if (expireDate2.getYear() < 1900) {
+expireDate2.setYear(expireDate.getYear() + 1900);
+} else {
+expireDate2.setYear(expireDate.getYear());
+}
+	expireDate2.setYear(expireDate2.getYear()-1);
+	
+	for (i=0; i<thisCookie.length; i++) {
+	
+		cookieName = thisCookie[i].split("=")[0];
+		if ((cookieName == "lastLogin") || (cookieName == "LastLoginDT") || (cookieName == "sessionLogin") || (cookieName == "sessionLoginDT")) {
+		document.cookie = cookieName + "=;expires=" + expireDate2.toGMTString() + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+		}
+	}
+}
+	  document.cookie = "lastLogin=" + CookieLogin + ";expires=" + expireDate.toGMTString() + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+  document.cookie = "LastLoginDT=" + CookieLoginDT + ";expires=" + expireDate.toGMTString() + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+	  document.cookie = "sessionLogin=" + sessionLogin + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+document.cookie = "sessionLoginDT=" + sessionLoginDT + ";domain=www.themiscpage.com;path=/cgi-bin/zpc/cgi-bin;";
+}
+
+// STOP HIDING FROM OTHER BROWSERS -->
+</SCRIPT>
+</head>
+ <BODY bgcolor="#FFFFFF"  text="#000000" link="#004080" alink="" vlink="#004080" marginheight=0 marginwidth=0 topmargin=0 leftmargin=0 rightmargin=0>
+<FONT SIZE="2" FACE="Verdana, Arial">
+
+<center>
+<table border=0 width=95%>
+<tr>
+<td align=left valign=top>
+<A HREF="Ultimate.cgi?action=intro&BypassCookie=true"><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/bbtitle5.jpg" BORDER=0></A>
+<BR>
+<FONT SIZE="2" FACE="Verdana, Arial" color="#004080"><B>General Conversation</B>
+<br><FONT size= "1" COLOR="#004080">(moderated by )
+<P><BR>
+</FONT></font>
+</td>
+<td valign=top nowrap><FONT SIZE="1" FACE="Verdana, Arial">
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/open.gif"  BORDER=0>&nbsp;&nbsp;<A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/Ultimate.cgi?action=intro&BypassCookie=true"><ACRONYM TITLE="Return to summary page of all forums.">ZPC Forums</ACRONYM></A>
+<BR>
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/tline.gif"  BORDER=0><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/open.gif"  BORDER=0>&nbsp;&nbsp;General Conversation
+<P>
+<CENTER>
+<FONT SIZE="2" FACE="Verdana, Arial">
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/postings.cgi?action=newtopic&number=1&forum=General+Conversation&DaysPrune=10&LastLogin="><IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/topic5.jpg"  BORDER=0 ALT="Post New Topic"></A></FONT>
+<BR>
+<A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/ubbmisc.cgi?action=editbio&Browser=&DaysPrune=&LastLogin="><ACRONYM TITLE="Click here to edit your profile.">profile</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/Ultimate.cgi?action=agree"><ACRONYM TITLE="Registration is free!">register</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/ubbmisc.cgi?action=setprefs"><ACRONYM TITLE="Set your preferences.">preferences</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/ubb/faq.html" target=_blank><ACRONYM TITLE="Frequently Asked Questions">faq</ACRONYM></A> | <A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/search.cgi?action=intro&default=1"><ACRONYM TITLE="Perform a search by keyword, date, or name.">search</ACRONYM></A>
+<p>
+<FORM ACTION="forumdisplay.cgi" METHOD="GET">
+<INPUT TYPE="HIDDEN" NAME="action" VALUE="topics">
+<INPUT TYPE="HIDDEN" NAME="forum" VALUE="General Conversation">
+<INPUT TYPE="HIDDEN" NAME="number" VALUE="1">
+<SELECT NAME="DaysPrune">
+	<OPTION value="1" >Show topics from last day
+	<OPTION value="2" >Show topics from last 2 days
+	<OPTION value="5" >Show topics from last 5 days
+	<OPTION value="10" SELECTED>Show topics from last 10 days
+	<OPTION value="20" >Show topics from last 20 days
+	<OPTION value="30" >Show topics from last 30 days
+	<OPTION value="45" >Show topics from last 45 days
+	<OPTION value="60" >Show topics from last 60 days
+	<OPTION value="75" >Show topics from last 75 days
+	<OPTION value="100" >Show topics from last 100 days
+	<OPTION value="365" >Show topics from the last year
+	<OPTION value="1000" >Show all topics
+</SELECT>
+<INPUT TYPE="SUBMIT" NAME="SUBMIT" VALUE="Go">
+</FORM>
+</center>
+</FONT>
+</td></tr></table>
+
+
+<table border=0 width=95%>
+<TR>
+<td><FONT SIZE="1" FACE="Verdana, Arial">
+<B>New Topics:</B> All registered users may post new topics in this forum.<BR><B>Replies:</B> All registered users may post replies in this forum.</font>
+</td>
+</tr>
+</table>
+
+
+<table border=0 cellpadding=4 border=0 cellspacing=1 width=95%>
+<tr bgcolor="#004080">
+<td>&nbsp;</td>
+<TD>&nbsp;</TD>
+<td>
+<FONT SIZE="1" FACE="Verdana, Arial" color="#ffffff"><B>Topic</B></FONT>
+</td>
+<td>
+<FONT SIZE="1" FACE="Verdana, Arial" color="#ffffff"><B>Topic Starter</B></FONT>
+</td>
+<td><FONT SIZE="1" FACE="Verdana, Arial" color="#ffffff"><B>Replies</B></FONT>
+</td>
+<td NOWRAP><FONT SIZE="1" FACE="Verdana, Arial" color="#ffffff"><B>Last Post</B></FONT>
+</td></tr>
+</table>
+
+<br>
+<table border=0 width=95%>
+<TR>
+<TD align=right><FONT SIZE="2" FACE="Verdana, Arial"></font>
+</td>
+</tr></table><BR>
+<table border=0 width=95%>
+<tr><td align=left valign=top>
+<FONT SIZE="1" FACE="Verdana, Arial" COLOR="#004080">All times are CT (US). </FONT></td>
+<td align=right NOWRAP>
+<FONT SIZE="2" FACE="Verdana, Arial">
+<FORM ACTION="forumdisplay.cgi" METHOD="GET">
+<INPUT TYPE="HIDDEN" NAME="action" VALUE="topics">
+<B>Hop to: </B><SELECT NAME="number">
+<OPTION value="">Select a Forum 
+<OPTION value="">
+<OPTION value="">List of Forums:
+<OPTION value="">
+<OPTION value="">
+<OPTION value="">Category: General
+<OPTION VALUE="">--------------------
+<OPTION value="1" SELECTED>General Conversation
+<OPTION value="5">Music Discussion
+<OPTION value="6">NES Gamers
+<OPTION value="">
+<OPTION value="">Category: Zelda
+<OPTION VALUE="">--------------------
+<OPTION value="2">Zelda in General
+<OPTION value="">
+<OPTION value="">Category: Iced Gaming
+<OPTION VALUE="">--------------------
+<OPTION value="3">Iced Gaming
+<OPTION value="">
+<OPTION value="">Category: Utilities
+<OPTION VALUE="">--------------------
+<OPTION value="4">Personal Images
+</SELECT><INPUT TYPE="SUBMIT" NAME="SUBMIT" VALUE="Go"></FORM></FONT></TD></tr></TABLE>
+</center>
+<P>
+<img src="http://www.themiscpage.com/cgi-bin/zpc/ubb/closed.gif"  border=0 alt="No New Posts">&nbsp;&nbsp;An Open Thread (<img src="http://www.themiscpage.com/cgi-bin/zpc/ubb/hotclosed.gif"  border=0 alt="Hot Topic">&nbsp;&nbsp;More than 20 replies).<BR>
+<IMG SRC="http://www.themiscpage.com/cgi-bin/zpc/ubb/yellockfolder.gif"  BORDER=0 ALT="Closed Thread Icon">&nbsp;&nbsp;A Closed thread - no new replies accepted.
+<p>
+<CENTER><A HREF="http://www.themiscpage.com/cgi-bin/zpc/cgi-bin/postings.cgi?action=newtopic&number=1&forum=General+Conversation">Post New Topic</A><P>
+<B><FONT SIZE="2" FACE="Verdana, Arial">
+Contact Us | <A HREF="http://zpcentral.zo8.com" target=_top>Zelda-Pokémon Central</A>
+</B></FONT>
+<P>
+<FONT COLOR="#8e8f8f" size="1" FACE="Verdana, Arial">"Thank you, Mr. Carmack."
+<P>
+Powered by: 
+Ultimate Bulletin Board (UltimateBB), Version 5.43a<BR>&copy; Infopop Corporation (formerly Madrona Park, Inc.), 1998-2000.
+<br><br>
+</FONT>
+</CENTER></font>
+
+</body></html>
+
