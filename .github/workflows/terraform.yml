@@ -1,0 +1,39 @@
+name: terraform
+
+# Validate + plan this repo's root on PRs, pushes to main, and on demand. OIDC
+# only — no long-lived AWS keys. The assumed role is plan-only (see github-oidc/).
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_PLAN_ROLE_ARN }}
+          aws-region: us-west-2
+
+      - uses: hashicorp/setup-terraform@v3
+
+      - name: fmt
+        run: terraform fmt -check -recursive
+
+      - name: init
+        run: terraform init -input=false
+
+      - name: validate
+        run: terraform validate -no-color
+
+      - name: plan
+        run: terraform plan -input=false -no-color
