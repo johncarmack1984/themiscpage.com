@@ -66,12 +66,14 @@ data "aws_iam_policy_document" "state_lock" {
   }
 
   statement {
-    sid    = "StateAndLockObjects"
+    # Read-only on state. PR plans run with -lock=false (see terraform.yml), so this
+    # PR-assumable (any-ref) role needs only GetObject to read state during plan — no
+    # PutObject/DeleteObject, so it cannot write, delete, or corrupt state. Apply (the
+    # only writer) runs locally with admin creds, never through this role.
+    sid    = "ReadState"
     effect = "Allow"
     actions = [
       "s3:GetObject",
-      "s3:PutObject",
-      "s3:DeleteObject",
     ]
     resources = [for k in local.planned_state_keys : "arn:aws:s3:::${local.state_bucket}/${k}/*"]
   }

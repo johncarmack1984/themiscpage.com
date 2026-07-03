@@ -36,4 +36,7 @@ jobs:
         run: terraform validate -no-color
 
       - name: plan
-        run: terraform plan -input=false -no-color
+        # -lock=false: the plan role is read-only on state (no S3 lock write), and a
+        # plan never mutates state, so skip the S3-native lock. Apply (which does lock)
+        # runs elsewhere with write creds.
+        run: terraform plan -input=false -no-color -lock=false
