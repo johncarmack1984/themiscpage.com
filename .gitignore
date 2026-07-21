@@ -13,3 +13,8 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+
+# Local Claude Code config
+CLAUDE.md
+CLAUDE.local.md
+.claude/
