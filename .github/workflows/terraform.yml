@@ -1,12 +1,14 @@
 name: terraform
 
-# Validate + plan this repo's root on PRs, pushes to main, and on demand. OIDC
+# Validate + plan the infra/ root on PRs, pushes to main, and on demand. OIDC
 # only — no long-lived AWS keys. The assumed role is plan-only (see github-oidc/).
 
 on:
   pull_request:
+    paths: [infra/**, github-oidc/**, .github/workflows/terraform.yml]
   push:
     branches: [main]
+    paths: [infra/**, github-oidc/**, .github/workflows/terraform.yml]
   workflow_dispatch:
 
 permissions:
@@ -21,6 +23,9 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: infra
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
