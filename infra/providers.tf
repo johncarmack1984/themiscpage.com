@@ -19,3 +19,9 @@ terraform {
 provider "aws" {
   region = "us-west-1"
 }
+
+# CloudFront certificates must live in us-east-1.
+provider "aws" {
+  alias  = "use1"
+  region = "us-east-1"
+}
