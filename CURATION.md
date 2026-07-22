@@ -14,6 +14,8 @@ The site in `site/` is the Wayback Machine's capture of themiscpage.com (1999-20
 
 **Insertions.** Exactly two files are not from the archive: `404.html` (the hosting provider's own IIS error page, taken verbatim from a 2003 capture of a missing page) and `cgi-bin/error.html` (new, in period style — the answer to any attempt to post to a board whose Ultimate Bulletin Board license lapsed while nobody was looking).
 
+**Inserted — one update.** The homepage's topmost post is dated July 21st, 2026: the site's first update in twenty-four years, in the format the page already used, announcing an addition to an MP3 library the archive never captured. Its link is broken because the file it points to has never existed. The date is real.
+
 **Gaps the archive left.** Never captured, so never restored: `/images/divide.gif` (the navigation divider), the boards' `title.gif`, all audio (the MP3s the Music section describes), the `directory.html` frame, several interior pages that were already dead links in 2002, and the 2005 state of the PHP boards' topic list. Where a gap makes a page render imperfectly, it renders imperfectly.
 
 ## Ledger
@@ -27,6 +29,7 @@ The mirror is 337 archived files; 260 ship. Counts by category, current with the
 | Third-party identity (names, emails, ICQ/AIM links, member cities, identity rows, one photograph) | 1 | ~390 |
 | Content curation (joke pages and lines whose premise was the problem, slur vocabulary) | 6 | ~30 |
 | The author's own street address, ICQ, and AIM identifiers | — | 3 |
+| The July 2026 update (one homepage post) | — | 1 |
 
 Every edit is byte-exact and logged with a reason at build time; the build fails if any of sixty-odd forbidden patterns (each removed name, address, number, school, and slur) survives anywhere in the output.
 

@@ -4,7 +4,7 @@ The Miscellaneous Page — my first website, hand-written in eighth grade, live 
 
 This is a static resurrection. Every page in `site/` is the original HTML as captured between 2000 and 2003: the table layouts, the `<font>` tags, the nested `<html>` documents I didn't know were wrong, the hit counter that reset itself to 1 in 2002 and stays at 1 forever now, and three successive generations of Ultimate Bulletin Board frozen mid-conversation — UBB 5.44a (2000), UBB 6.0 (2001), and UBB.classic (2002), each with its Infopop Corporation footer intact. Infopop is not around to renew the license, so any attempt to post gets the answer it deserves: see `site/cgi-bin/error.html`.
 
-The commit dates in this repo are accurate to the era the files come from. Git was released in 2005. The site declines to explain itself.
+The commit dates in this repo are accurate to the era the files come from. Git was released in 2005. On July 21st, 2026, the site updated once. The site declines to explain itself.
 
 ## Layout
 
