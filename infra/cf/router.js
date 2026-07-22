@@ -36,6 +36,9 @@ function transformQuery(qsObj) {
     }
   }
   if (pairs.length === 0) return '';
+  // Sort pairs: the parsed querystring object does not preserve wire order,
+  // so keys are canonicalized by sorting. build_manifest.py sorts identically.
+  pairs.sort();
   var q = pairs.join('&');
   // Mirror build_manifest.py local_path(): charset squash, then separator swaps.
   q = q.replace(/[^0-9A-Za-z=&+._-]/g, '~');

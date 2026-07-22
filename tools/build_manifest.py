@@ -28,7 +28,10 @@ def local_path(path, query):
     if p == "" or p.endswith("/"):
         p += "index.html"
     if query:
-        q = unquote(query)
+        # Sort pairs: CloudFront Functions expose the query as a parsed object
+        # whose iteration order is not the wire order, so the object key must
+        # be order-independent. infra/cf/router.js sorts identically.
+        q = "&".join(sorted(unquote(query).split("&")))
         q = re.sub(r"[^0-9A-Za-z=&+._-]", "~", q)
         q = q.replace("&", "__").replace("=", "-").replace("+", "_")
         if len(q) > 120:
