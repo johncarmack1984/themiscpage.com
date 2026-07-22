@@ -22,4 +22,4 @@ The mirror is not quite verbatim. Some things a fourteen-year-old published in 1
 
 Plan/apply from `infra/` (state in S3; CI plans, applies are manual). The ACM certificate validates via DNS records that live in `my-infra/dns`, so a first apply emits the validation CNAMEs, and the apex/www ALIAS records point at the CloudFront domain in the outputs. Content deploys automatically on push to main, or by hand with `tools/deploy.sh s3://themiscpage.com`.
 
-`sentiment.themiscpage.com` is a separate app with separate infrastructure and does not pass through any of this.
+A sentiment-analysis app once lived at `sentiment.themiscpage.com`; it has been retired, and the domain now serves nothing but 1999.

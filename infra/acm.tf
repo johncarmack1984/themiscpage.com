@@ -1,8 +1,6 @@
-# CloudFront-facing certificate (us-east-1). DNS records live in my-infra/dns
-# by convention, so validation is a two-step apply: apply here, add the emitted
-# validation CNAMEs there, then re-apply once the cert issues. The
-# sentiment.themiscpage.com cert in sentiment-analyzer/infra is separate and
-# untouched.
+# CloudFront-facing certificate (us-east-1). DNS records live in the private
+# dns root by convention, so validation is a two-step apply: apply here, add
+# the emitted validation CNAMEs there, then re-apply once the cert issues.
 
 resource "aws_acm_certificate" "site" {
   provider                  = aws.use1
