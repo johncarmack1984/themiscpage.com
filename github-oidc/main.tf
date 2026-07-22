@@ -10,7 +10,14 @@
 # site bucket + invalidate CloudFront.
 
 locals {
-  github_repo  = "johncarmack1984/themiscpage.com"
+  github_repo = "johncarmack1984/themiscpage.com"
+
+  # GitHub mints OIDC subjects with immutable owner/repo IDs appended
+  # (rename-proof; see GET /repos/{o}/{r}/actions/oidc/customization/sub,
+  # field sub_claim_prefix). Trust pins the IDs so a rename or a name-reuse
+  # squat can never satisfy the condition.
+  github_repo_oidc = "johncarmack1984@20649979/themiscpage.com@1267642602"
+
   state_bucket = "john-carmack-terraform-state"
   site_bucket  = "themiscpage.com"
 
@@ -43,7 +50,7 @@ data "aws_iam_policy_document" "trust" {
     condition {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = ["repo:${local.github_repo}:*"]
+      values   = ["repo:${local.github_repo_oidc}:*"]
     }
   }
 }
@@ -116,7 +123,7 @@ data "aws_iam_policy_document" "deploy_trust" {
     condition {
       test     = "StringEquals"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = ["repo:${local.github_repo}:ref:refs/heads/main"]
+      values   = ["repo:${local.github_repo_oidc}:ref:refs/heads/main"]
     }
   }
 }
